@@ -15,7 +15,6 @@ model.add(Dense(1,activation='sigmoid'))
 model.compile(loss='binary_crossentropy',optimizer='adam',metrics=['accuracy'])
 model.fit(x,y,epochs=5,batch_size=10)
 
-
 _,accuracy = model.evaluate(x,y)
 print('Accuracy: %.2f' % (accuracy * 100))
 
