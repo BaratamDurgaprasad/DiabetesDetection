@@ -18,4 +18,5 @@ predictions = (predictions >0.5).astype(int)
 for i in range(5,10):
         print('%s => %d (Originl Class: %d)' % (x[i].tolist(),predictions[i][0], int(y[i])))
         
+        
 
